@@ -114,7 +114,7 @@ The default configuration file was modified to handle secure routing on port 443
    server {
        listen 80 default_server;
        listen [::]:80 default_server;
-       server_name _;
+       server_name EC2_PublicIP;
        return 301 https://\(host\)request_uri;
    }
    ```
